@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Show-Offs</title>
+    <link rel="stylesheet" type="text/css" href="resources/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/styles.css">
+</head>
+
+<body>
+    <div class="temperature">
+        <h2>Enter a temperature in Celsius, Fahrenheit, or Kelvin to see the corresponding conversion</h2>
+        <label for="Kelvin">Kelvin</label>
+        <input type="text" id="kelvin-box" oninput="k2c()" onclick="clickClear()">
+        
+        <label for="celsius-box">Celsius</label>
+        <input type="text" id="celsius-box" oninput="c2f()" onclick="clickClear()">
+      
+        <label for="fahrenheit-box">Fahrenheit</label>
+        <input type="text" id="fahrenheit-box" onclick="clickClear()" oninput="f2k()">
+        
+    </div>
+    <br><br>
+    <div class="human-years">
+        <h2>Enter your dog's years of life to see how old they are in Dog Years</h2>
+        <input id="dog-years" oninput="d2h()">
+        <h3 class="dog"></h3>
+    </div>
+
+    <div class="dog-years">
+        <h2>Enter your Human age and see how old you would be as a dog.</h2>
+        <input id="age" oninput="a2d()">
+        <h2 class="years"></h2>
+    </div>
+
+    <div class="magic">
+        <h2>Click to shake the Magic Eightball for a response.</h2>
+        <img class="eightball" src="resources/matt-icons_eightball.svg">
+        <button onclick="shake()">Shake</button>
+        <h3 class="response"></h3>
+    </div>
+
+    <div class="toma">
+        <h2>click to spin the toma spinning-top</h2>
+        <button onclick="spin()">Spin Top</button>
+        <p class="outcome"></p>
+    </div>
+
+    <!-- skipping race day number gen: https://www.codecademy.com/journeys/full-stack-engineer/paths/fscj-22-building-interactive-websites/tracks/fscj-22-javascript-syntax-part-i/modules/wdcp-22-learn-javascript-syntax-conditionals-0e12e9e0-b36f-476e-b10c-afbc7cd6dbfe/projects/race-day -->
+    
+    <div class="prs">
+        <h2>Play Paper Rock Scissors Against the Computer</h2>
+        
+        <button id="paper" onclick="go(0)">Paper</button>
+        <button id="rock" onclick="go(1)">Rock</button>
+        <button id="scissors" onclick="go(2)">Scissors</button>
+        <img src="resources/fingers-gd1e1b33f0_640.png"/>
+        <p> Computer's Selection: <span class="cpu"></span></p>
+        <p>Results: <span class="go-outcome"></span></p>
+    </div>
+
+    <div class="sleep-debt">
+        <h2>Enter hours slept in the last 7 days to calculate your sleep-debt.</h2>
+        <label for="ideal">Ideal hours of sleep per night:</label>
+        <input type="text" id="ideal" value="8" oninput="calcSleep()">
+        <br>
+
+        <div class="days">
+            <div class="day">
+                <label for="mon">Monday</label>
+                <input id="mon" type="text" value="8" oninput="calcSleep()">
+                <p class="mon-calc"></p>
+            </div>
+            <div class="day">
+                <label for="tues">Tuesday</label>
+                <input id="tues" type="text" value="8" oninput="calcSleep()">
+                <p class="tues-calc"></p>
+            </div>
+            <div class="day">
+                <label for="wed">Wednesday</label>
+                <input id="wed" type="text" value="8" oninput="calcSleep()">
+                <p class="wed-calc"></p>
+            </div>
+            <div class="day">
+                <label for="thurs">Thursday</label>
+                <input id="thurs" type="text" value="8" oninput="calcSleep()">
+                <p class="thurs-calc"></p>
+            </div>
+            <div class="day">
+                <label for="fri">Friday</label>
+                <input id="fri" type="text" value="8" oninput="calcSleep()">
+                <p class="fri-calc"></p>
+            </div>
+            <div class="day">
+                <label for="sat">Saturday</label>
+                <input id="sat" type="text" value="8" oninput="calcSleep()">
+                <p class="sat-calc"></p>
+            </div>
+            <div class="day">
+                <label for="sun">Sunday</label>
+                <input id="sun" type="text" value="8" oninput="calcSleep()">
+                <p class="sun-calc"></p>
+            </div>
+            <p class="comments"></p>
+        </div>
+
+        <div class="planet-weight">
+            <h2>Enter your weight and favorite planet to see your weight on that planets.</h2>
+            <label for="weight">Enter Weight (pounds): </label>
+            <input type="text" id="weight" value="150">
+            <label for="planet">Enter Planet Name: </label>
+            <input type="text" id="planet" value="Earth">
+            <button onclick="calculateWeight()">Calculate</button>
+            <p class="planetary"></p>
+        </div>
+
+        <div class="tip">
+            <img src="resources/calculator.jpg"/>
+            <h2>Calculate your tip amount</h2>
+            <label for="total">Bill Total: </label>
+            <input type="text" id="total">
+            <p>Choose quality of service:</p>
+            <button onclick="tipGen('terrible')">Terrible</button>
+            <button onclick="tipGen('bad')">Bad</button>
+            <button onclick="tipGen('ok')">Okay</button>
+            <button onclick="tipGen('good')">Good</button>
+            <button onclick="tipGen('excellent')">Excellent</button>
+            <p class="tip-amount"></p>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <script src="resources/js/script.js" type="text/javascript"></script>
+</body>
+</html>

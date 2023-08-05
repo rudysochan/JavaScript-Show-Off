@@ -1,0 +1,50 @@
+* {
+    box-sizing:border-box;
+  }
+
+div {
+  margin-top:60px;
+  border:black 1px solid;
+  padding:5px;
+}
+
+.eightball {
+  width:300px;
+  height:auto;
+}
+
+.prs img{
+  width:300px;
+  height:auto;
+}
+ 
+.days {
+  display:inline-flex;
+  border:none;
+  margin:0;
+  flex-wrap:wrap;
+}
+
+.day p {
+  display:block;
+}
+
+.days label{
+  position:absolute;
+
+}
+
+.days input {
+  position:relative;
+  display:block;
+  margin-top: 20px;
+  width:80px;
+}
+
+
+.tip img{
+  float:right;
+  max-width:auto;
+  max-height:180px;
+  overflow:hidden;
+}
