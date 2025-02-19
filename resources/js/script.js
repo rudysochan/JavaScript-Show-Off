@@ -286,3 +286,7 @@ function tipGen(quality){
 	amount = tipCalculator(quality, total);
 	document.querySelector('.tip-amount').textContent=`Calculated Tip: ${amount.toFixed(2)}`;
 }
+
+function runHack()=> {
+	console.log("hi")
+}
