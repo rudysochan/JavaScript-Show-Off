@@ -287,6 +287,6 @@ function tipGen(quality){
 	document.querySelector('.tip-amount').textContent=`Calculated Tip: ${amount.toFixed(2)}`;
 }
 
-function runHack()=> {
+function runHack(){
 	console.log("hi")
 }
